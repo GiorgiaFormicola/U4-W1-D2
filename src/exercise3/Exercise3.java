@@ -25,7 +25,6 @@ public class Exercise3 {
         while (true) {
             System.out.println("Insert a string to divide it in single characters (type the string ':q' to exit):");
             String string = scanner.nextLine();
-            //StringBuilder stringDivided = new StringBuilder();
             if (Objects.equals(string, ":q")) break;
             for (int i = 0; i < string.length(); i++) {
                 if (i != string.length() - 1) {
