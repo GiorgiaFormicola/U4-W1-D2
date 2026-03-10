@@ -13,6 +13,5 @@ public class Exercise2 {
             case 3 -> System.out.println("Three");
             default -> System.out.println("Error: the chosen number is not available");
         }
-        ;
     }
 }

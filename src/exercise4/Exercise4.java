@@ -23,8 +23,7 @@ public class Exercise4 {
         }
         return countdown.toString();
     }
-
-    ;
+    
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

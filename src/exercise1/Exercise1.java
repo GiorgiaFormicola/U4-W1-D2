@@ -12,9 +12,7 @@ public class Exercise1 {
             return year % 4 == 0 && year % 100 != 0;
         }
     }
-
-    ;
-
+    
     public static void main(String[] args) {
         System.out.println("----- evenUnevenString METHOD TEST");
         String string = "Ciao";
