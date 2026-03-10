@@ -1,39 +1,35 @@
 package exercise3;
 
-import java.util.Objects;
 import java.util.Scanner;
 
 public class Exercise3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-       /* while (true) {
+      /*  while (true) {
             System.out.println("Insert a string to divide it in single characters (type the string ':q' to exit):");
-            String stringToDivide = scanner.nextLine();
+            String string = scanner.nextLine();
             StringBuilder stringDivided = new StringBuilder();
-            if (Objects.equals(stringToDivide, ":q")) break;
-            for (int i = 0; i < stringToDivide.length(); i++) {
-                if (i != stringToDivide.length() - 1) {
-                    stringDivided.append(stringToDivide.charAt(i)).append(",");
+            if (string.equals(":q")) break;
+            //if(string == ":q") break;
+            for (int i = 0; i < string.length(); i++) {
+                if (i != string.length() - 1) {
+                    stringDivided.append(string.charAt(i)).append(",");
                 } else {
-                    stringDivided.append(stringToDivide.charAt(i));
+                    stringDivided.append(string.charAt(i));
                 }
             }
-            System.out.println(stringDivided);
+            string = stringDivided.toString();
+            System.out.println(string);
         }*/
 
         while (true) {
             System.out.println("Insert a string to divide it in single characters (type the string ':q' to exit):");
             String string = scanner.nextLine();
-            if (Objects.equals(string, ":q")) break;
-            for (int i = 0; i < string.length(); i++) {
-                if (i != string.length() - 1) {
-                    System.out.print(string.charAt(i) + ",");
-                } else {
-                    System.out.print(string.charAt(i) + "\n");
-                }
-            }
-
+            if (string.equals(":q")) break;
+            String[] charactersArray = string.split("");
+            string = String.join(",", charactersArray);
+            System.out.println(string);
         }
     }
 }
